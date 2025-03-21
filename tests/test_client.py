@@ -42,7 +42,7 @@ def _get_params(client: BaseClient[Any, Any]) -> dict[str, str]:
     url = httpx.URL(request.url)
     return dict(url.params)
 
-
+# Method to return low retry timeout config
 def _low_retry_timeout(*_args: Any, **_kwargs: Any) -> float:
     return 0.1
 
